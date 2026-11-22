@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="railBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f14"/>
+      <stop offset="100%" stop-color="#111923"/>
+    </linearGradient>
+    <linearGradient id="lightCone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#railBg)"/>
+
+  <!-- Station Platform & Railway Track Perspective -->
+  <g transform="translate(100, 100)">
+    <!-- Rail Tracks -->
+    <line x1="0" y1="280" x2="600" y2="280" stroke="#3f3f46" stroke-width="3"/>
+    <line x1="0" y1="300" x2="600" y2="300" stroke="#3f3f46" stroke-width="3"/>
+    <!-- Sleepers -->
+    <line x1="60" y1="275" x2="60" y2="305" stroke="#27272a" stroke-width="2"/>
+    <line x1="140" y1="275" x2="140" y2="305" stroke="#27272a" stroke-width="2"/>
+    <line x1="220" y1="275" x2="220" y2="305" stroke="#27272a" stroke-width="2"/>
+    <line x1="300" y1="275" x2="300" y2="305" stroke="#27272a" stroke-width="2"/>
+    <line x1="380" y1="275" x2="380" y2="305" stroke="#27272a" stroke-width="2"/>
+    <line x1="460" y1="275" x2="460" y2="305" stroke="#27272a" stroke-width="2"/>
+    <line x1="540" y1="275" x2="540" y2="305" stroke="#27272a" stroke-width="2"/>
+
+    <!-- Platform Slab -->
+    <polygon points="0,260 600,260 600,230 0,230" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
+    <line x1="0" y1="258" x2="600" y2="258" stroke="#F59E0B" stroke-width="3" stroke-dasharray="8,6"/>
+
+    <!-- Canopy Roof Truss -->
+    <polygon points="50,60 550,60 520,30 80,30" fill="#1f2937" stroke="#4b5563" stroke-width="1.5"/>
+    
+    <!-- Luminaire Posts & Light Cones (AGi32 Simulation Simulation) -->
+    <!-- Luminaire 1 -->
+    <line x1="120" y1="60" x2="120" y2="75" stroke="#8B5CF6" stroke-width="3"/>
+    <polygon points="120,75 50,230 190,230" fill="url(#lightCone)"/>
+    <circle cx="120" cy="75" r="5" fill="#38BDF8"/>
+    <text x="100" y="220" fill="#38BDF8" font-family="monospace" font-size="10">80 LUX</text>
+
+    <!-- Luminaire 2 -->
+    <line x1="300" y1="60" x2="300" y2="75" stroke="#8B5CF6" stroke-width="3"/>
+    <polygon points="300,75 230,230 370,230" fill="url(#lightCone)"/>
+    <circle cx="300" cy="75" r="5" fill="#38BDF8"/>
+    <text x="280" y="220" fill="#38BDF8" font-family="monospace" font-size="10">82 LUX</text>
+
+    <!-- Luminaire 3 -->
+    <line x1="480" y1="60" x2="480" y2="75" stroke="#8B5CF6" stroke-width="3"/>
+    <polygon points="480,75 410,230 550,230" fill="url(#lightCone)"/>
+    <circle cx="480" cy="75" r="5" fill="#38BDF8"/>
+    <text x="460" y="220" fill="#38BDF8" font-family="monospace" font-size="10">79 LUX</text>
+
+    <!-- AGi32 Isolux Grid Contour Lines on Platform -->
+    <ellipse cx="120" cy="245" rx="50" ry="8" fill="none" stroke="#06B6D4" stroke-width="1.2" stroke-dasharray="3,3"/>
+    <ellipse cx="300" cy="245" rx="50" ry="8" fill="none" stroke="#06B6D4" stroke-width="1.2" stroke-dasharray="3,3"/>
+    <ellipse cx="480" cy="245" rx="50" ry="8" fill="none" stroke="#06B6D4" stroke-width="1.2" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- HUD Specs -->
+  <g font-family="'Space Grotesk', monospace" font-size="12" fill="#A1A1AA">
+    <text x="40" y="50" fill="#38BDF8" font-weight="bold" font-size="14">TRANSIT LIGHTING RENEWAL // AGi32 SIMULATION</text>
+    <text x="40" y="70">CLIENT: PUBLIC TRANSPORT AUTHORITY (PTA WA) &amp; LUCID</text>
+    <text x="40" y="90">STANDARD: AS/NZS 1158 &amp; AS/NZS 1680 WORKPLACE ILLUMINANCE</text>
+    
+    <rect x="580" y="35" width="180" height="70" rx="6" fill="#18181b" stroke="#27272a"/>
+    <text x="595" y="60" fill="#FAFAFA" font-size="11">VERIFIED ACCURACY</text>
+    <text x="595" y="80" fill="#38BDF8" font-weight="bold" font-size="13">100% COMPLIANT</text>
+  </g>
+</svg>
