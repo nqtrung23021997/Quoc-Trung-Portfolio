@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c0d14"/>
-      <stop offset="100%" stop-color="#141522"/>
+      <stop offset="0%" stop-color="#0B0D0F"/>
+      <stop offset="100%" stop-color="#14171C"/>
     </linearGradient>
-    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.9"/>
+    <linearGradient id="limeLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C0FF6B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#6DB5CA" stop-opacity="0.9"/>
     </linearGradient>
     <linearGradient id="glowPulse" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#C0FF6B" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#C0FF6B" stop-opacity="0"/>
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#27272a" stroke-width="0.75" stroke-opacity="0.5"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#808080" stroke-width="0.75" stroke-opacity="0.22"/>
     </pattern>
   </defs>
 
@@ -24,48 +24,48 @@
   <!-- Hospital BIM Isometric Wireframe Structure -->
   <g transform="translate(140, 80)">
     <!-- Base Foundations & Medical Wing Isometric -->
-    <polygon points="260,320 40,200 260,80 480,200" fill="#18181b" stroke="#3f3f46" stroke-width="1.5" fill-opacity="0.7"/>
-    <polygon points="260,320 260,340 40,220 40,200" fill="#121215" stroke="#27272a" stroke-width="1"/>
-    <polygon points="260,320 260,340 480,220 480,200" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+    <polygon points="260,320 40,200 260,80 480,200" fill="#14171C" stroke="#808080" stroke-width="1.2" stroke-opacity="0.6" fill-opacity="0.8"/>
+    <polygon points="260,320 260,340 40,220 40,200" fill="#0E1014" stroke="#808080" stroke-width="0.9" stroke-opacity="0.4"/>
+    <polygon points="260,320 260,340 480,220 480,200" fill="#14171C" stroke="#808080" stroke-width="0.9" stroke-opacity="0.4"/>
 
     <!-- Central Tower Block -->
-    <polygon points="260,220 160,165 260,110 360,165" fill="#1f1f2e" stroke="#8B5CF6" stroke-width="1.5"/>
-    <polygon points="260,220 260,250 160,195 160,165" fill="#181824" stroke="#8B5CF6" stroke-width="1.2"/>
-    <polygon points="260,220 260,250 360,195 360,165" fill="#232338" stroke="#8B5CF6" stroke-width="1.2"/>
+    <polygon points="260,220 160,165 260,110 360,165" fill="#1B1F26" stroke="#6DB5CA" stroke-width="1.5"/>
+    <polygon points="260,220 260,250 160,195 160,165" fill="#14171C" stroke="#6DB5CA" stroke-width="1.2"/>
+    <polygon points="260,220 260,250 360,195 360,165" fill="#1E232B" stroke="#6DB5CA" stroke-width="1.2"/>
 
     <!-- ICU / Surgical Ward High-Level BIM Riser -->
-    <polygon points="260,130 200,98 260,65 320,98" fill="#2d1b4e" stroke="#06B6D4" stroke-width="1.5"/>
-    <polygon points="260,130 260,150 200,118 200,98" fill="#211538" stroke="#06B6D4" stroke-width="1"/>
-    <polygon points="260,130 260,150 320,118 320,98" fill="#361f5c" stroke="#06B6D4" stroke-width="1"/>
+    <polygon points="260,130 200,98 260,65 320,98" fill="#13241C" stroke="#C0FF6B" stroke-width="1.5"/>
+    <polygon points="260,130 260,150 200,118 200,98" fill="#0F1D17" stroke="#C0FF6B" stroke-width="1"/>
+    <polygon points="260,130 260,150 320,118 320,98" fill="#1A2E24" stroke="#C0FF6B" stroke-width="1"/>
 
     <!-- Electrical Containment & Cable Tray Routing Lines -->
-    <path d="M 120 180 L 260 260 L 400 180" fill="none" stroke="#06B6D4" stroke-width="3" stroke-dasharray="6,4"/>
-    <path d="M 260 260 L 260 140" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="4,4"/>
-    <path d="M 200 135 L 260 170 L 320 135" fill="none" stroke="#38BDF8" stroke-width="2"/>
+    <path d="M 120 180 L 260 260 L 400 180" fill="none" stroke="#C0FF6B" stroke-width="2.5" stroke-dasharray="6,4"/>
+    <path d="M 260 260 L 260 140" fill="none" stroke="#6DB5CA" stroke-width="2.5" stroke-dasharray="4,4"/>
+    <path d="M 200 135 L 260 170 L 320 135" fill="none" stroke="#C0FF6B" stroke-width="2"/>
 
     <!-- Electrical Equipment Nodes -->
-    <circle cx="120" cy="180" r="6" fill="#06B6D4"/>
-    <circle cx="120" cy="180" r="12" fill="none" stroke="#06B6D4" stroke-opacity="0.4"/>
+    <circle cx="120" cy="180" r="5" fill="#C0FF6B"/>
+    <circle cx="120" cy="180" r="11" fill="none" stroke="#C0FF6B" stroke-opacity="0.35"/>
     
-    <circle cx="260" cy="260" r="7" fill="#8B5CF6"/>
-    <circle cx="260" cy="260" r="14" fill="none" stroke="#8B5CF6" stroke-opacity="0.4"/>
+    <circle cx="260" cy="260" r="6" fill="#6DB5CA"/>
+    <circle cx="260" cy="260" r="13" fill="none" stroke="#6DB5CA" stroke-opacity="0.35"/>
 
-    <circle cx="400" cy="180" r="6" fill="#06B6D4"/>
-    <circle cx="260" cy="140" r="6" fill="#38BDF8"/>
+    <circle cx="400" cy="180" r="5" fill="#C0FF6B"/>
+    <circle cx="260" cy="140" r="5" fill="#90CFE0"/>
     
     <!-- Photometric Lighting Cone Simulation Overlay -->
-    <polygon points="260,70 180,180 340,180" fill="url(#glowPulse)" stroke="#8B5CF6" stroke-dasharray="2,2" stroke-width="1"/>
+    <polygon points="260,70 180,180 340,180" fill="url(#glowPulse)" stroke="#C0FF6B" stroke-dasharray="2,2" stroke-width="1"/>
   </g>
 
   <!-- Technical Overlay HUD Elements -->
-  <g font-family="'Space Grotesk', monospace" font-size="12" fill="#A1A1AA">
-    <text x="40" y="50" fill="#8B5CF6" font-weight="bold" font-size="14">BIM // HEALTHCARE SECTOR</text>
+  <g font-family="'Space Grotesk', monospace" font-size="12" fill="#B4B9C2">
+    <text x="40" y="50" fill="#C0FF6B" font-weight="bold" font-size="14">BIM // HEALTHCARE SECTOR</text>
     <text x="40" y="70">FACILITY: NEW WOMEN'S &amp; CHILDREN'S HOSPITAL</text>
     <text x="40" y="90">VALUATION: $3,200,000,000 AUD | LOD: 400-500</text>
-    <text x="40" y="110" fill="#06B6D4">STATUS: ACTIVE BIM COORDINATION &amp; AGi32 VERIFICATION</text>
+    <text x="40" y="110" fill="#6DB5CA">STATUS: ACTIVE BIM COORDINATION &amp; AGi32 VERIFICATION</text>
     
-    <rect x="580" y="35" width="180" height="70" rx="6" fill="#18181b" stroke="#27272a" fill-opacity="0.9"/>
-    <text x="595" y="60" fill="#FAFAFA" font-size="11">PRIMARY STANDARD</text>
-    <text x="595" y="80" fill="#8B5CF6" font-weight="bold" font-size="13">AS/NZS 3000 &amp; 1680</text>
+    <rect x="580" y="35" width="180" height="70" rx="6" fill="#14171C" stroke="#808080" stroke-opacity="0.4"/>
+    <text x="595" y="60" fill="#F5F7FA" font-size="11">PRIMARY STANDARD</text>
+    <text x="595" y="80" fill="#C0FF6B" font-weight="bold" font-size="13">AS/NZS 3000 &amp; 1680</text>
   </g>
 </svg>

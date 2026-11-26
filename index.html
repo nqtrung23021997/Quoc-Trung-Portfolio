@@ -56,7 +56,7 @@
           <button class="lang-btn active" data-lang="vi" aria-label="Tiếng Việt">VI</button>
         </div>
 
-        <a href="#contact" class="btn btn-primary" data-i18n="nav.viewOutsource">Hợp Tác Outsource</a>
+        <a href="#contact" class="btn btn-primary nav-cta-btn" data-i18n="nav.viewOutsource">Hợp Tác Outsource</a>
 
         <!-- Mobile Hamburger Button -->
         <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
@@ -169,12 +169,12 @@
        ======================================================================== -->
   <section class="section" id="about">
     <div class="container">
-      <div class="section-header reveal-on-scroll">
+      <div class="section-header reveal-on-scroll section-header-wide">
         <div class="badge-pill">
           <span class="pulse-dot"></span>
           <span data-i18n="about.badge">Hành Trình Nghề Nghiệp</span>
         </div>
-        <h2 class="section-title">
+        <h2 class="section-title section-title-nowrap">
           <span class="gradient-text" data-i18n="about.title">Đam Mê Kỹ Thuật, Vững Vàng Từng Chi Tiết</span>
         </h2>
       </div>
@@ -226,24 +226,30 @@
                 <div class="spec-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
                 </div>
-                <h4 class="spec-title" data-i18n="about.spec1Title">Kỹ Sư Thiết Kế Điện</h4>
-                <p class="spec-desc" data-i18n="about.spec1Desc">Thiết kế hệ thống cấp nguồn &amp; phân phối điện, thang máng cáp, trạm biến áp, tủ điện tổng (MSB/DB), sơ đồ nguyên lý 1 sợi (SLD) và chống sét.</p>
+                <div class="spec-info">
+                  <h4 class="spec-title" data-i18n="about.spec1Title">Kỹ Sư Thiết Kế Điện</h4>
+                  <p class="spec-desc" data-i18n="about.spec1Desc">Thiết kế hệ thống cấp nguồn &amp; phân phối điện, thang máng cáp, trạm biến áp, tủ điện tổng (MSB/DB), sơ đồ nguyên lý 1 sợi (SLD) và chống sét.</p>
+                </div>
               </div>
 
               <div class="spec-card">
                 <div class="spec-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line></svg>
                 </div>
-                <h4 class="spec-title" data-i18n="about.spec2Title">Chuyên Gia Chiếu Sáng</h4>
-                <p class="spec-desc" data-i18n="about.spec2Desc">Tính toán và mô phỏng trắc quang chuyên sâu bằng AGi32 &amp; Dialux evo, đáp ứng nghiêm ngặt tiêu chuẩn chiếu sáng nơi làm việc và công cộng AS/NZS 1680 &amp; 1158.</p>
+                <div class="spec-info">
+                  <h4 class="spec-title" data-i18n="about.spec2Title">Chuyên Gia Chiếu Sáng</h4>
+                  <p class="spec-desc" data-i18n="about.spec2Desc">Tính toán và mô phỏng trắc quang chuyên sâu bằng AGi32 &amp; Dialux evo, đáp ứng nghiêm ngặt tiêu chuẩn chiếu sáng nơi làm việc và công cộng AS/NZS 1680 &amp; 1158.</p>
+                </div>
               </div>
 
               <div class="spec-card">
                 <div class="spec-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
                 </div>
-                <h4 class="spec-title" data-i18n="about.spec3Title">Dịch Vụ &amp; Quản Lý BIM Điện</h4>
-                <p class="spec-desc" data-i18n="about.spec3Desc">Mô hình hóa LOD 300-500 trên Revit MEPF, xử lý xung đột Navisworks &amp; Revizto, quản lý môi trường dữ liệu chung (BIM 360 / ACC) và xuất bản vẽ thi công As-Built.</p>
+                <div class="spec-info">
+                  <h4 class="spec-title" data-i18n="about.spec3Title">Dịch Vụ &amp; Quản Lý BIM Điện</h4>
+                  <p class="spec-desc" data-i18n="about.spec3Desc">Mô hình hóa LOD 300-500 trên Revit MEPF, xử lý xung đột Navisworks &amp; Revizto, quản lý môi trường dữ liệu chung (BIM 360 / ACC) và xuất bản vẽ thi công As-Built.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -338,7 +344,7 @@
   <!-- ========================================================================
        SECTION 3: SKILLS & TECHNOLOGY
        ======================================================================== -->
-  <section class="section" id="skills" style="background: #0b0c10;">
+  <section class="section" id="skills">
     <div class="container">
       <div class="section-header reveal-on-scroll">
         <div class="badge-pill">
@@ -400,7 +406,7 @@
       <div class="modal-body">
         <div class="modal-header-hero">
           <img src="" alt="" class="modal-hero-img" id="modal-img">
-          <span class="skill-tag" id="modal-role-badge" style="background: rgba(139, 92, 246, 0.2); color: var(--accent-purple-light); border-color: var(--accent-purple);"></span>
+          <span class="skill-tag" id="modal-role-badge" style="background: var(--accent-cyan-dim); color: var(--accent-cyan-light); border-color: var(--accent-cyan);"></span>
           <h2 class="modal-title" id="modal-title" style="margin-top: 0.6rem;"></h2>
           <div class="modal-client" id="modal-client"></div>
         </div>
@@ -426,7 +432,7 @@
   <!-- ========================================================================
        SECTION 5: EXPERIENCE
        ======================================================================== -->
-  <section class="section" id="experience" style="background: #0c0d12;">
+  <section class="section" id="experience">
     <div class="container">
       <div class="section-header reveal-on-scroll">
         <div class="badge-pill">

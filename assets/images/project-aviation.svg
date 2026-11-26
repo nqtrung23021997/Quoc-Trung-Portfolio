@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
   <defs>
     <linearGradient id="airBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0e14"/>
-      <stop offset="100%" stop-color="#141a29"/>
+      <stop offset="0%" stop-color="#0B0D0F"/>
+      <stop offset="100%" stop-color="#14171C"/>
     </linearGradient>
   </defs>
 
@@ -11,38 +11,38 @@
   <!-- Airport Concourse & Terminal Roof Arch Wireframe -->
   <g transform="translate(100, 100)">
     <!-- Aerodynamic Roof Curvature -->
-    <path d="M 0 160 Q 300 -20 600 160" fill="none" stroke="#8B5CF6" stroke-width="3"/>
-    <path d="M 0 180 Q 300 0 600 180" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <path d="M 0 160 Q 300 -20 600 160" fill="none" stroke="#C0FF6B" stroke-width="2.5"/>
+    <path d="M 0 180 Q 300 0 600 180" fill="none" stroke="#6DB5CA" stroke-width="1.5" stroke-dasharray="6,4"/>
     
     <!-- Support Columns -->
-    <line x1="80" y1="140" x2="80" y2="280" stroke="#3f3f46" stroke-width="3"/>
-    <line x1="220" y1="90" x2="220" y2="280" stroke="#3f3f46" stroke-width="3"/>
-    <line x1="380" y1="90" x2="380" y2="280" stroke="#3f3f46" stroke-width="3"/>
-    <line x1="520" y1="140" x2="520" y2="280" stroke="#3f3f46" stroke-width="3"/>
+    <line x1="80" y1="140" x2="80" y2="280" stroke="#808080" stroke-width="2" stroke-opacity="0.5"/>
+    <line x1="220" y1="90" x2="220" y2="280" stroke="#808080" stroke-width="2" stroke-opacity="0.5"/>
+    <line x1="380" y1="90" x2="380" y2="280" stroke="#808080" stroke-width="2" stroke-opacity="0.5"/>
+    <line x1="520" y1="140" x2="520" y2="280" stroke="#808080" stroke-width="2" stroke-opacity="0.5"/>
 
     <!-- High-Level Primary Cable Tray Distribution -->
-    <line x1="20" y1="210" x2="580" y2="210" stroke="#06B6D4" stroke-width="4"/>
-    <line x1="20" y1="220" x2="580" y2="220" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="4,4"/>
+    <line x1="20" y1="210" x2="580" y2="210" stroke="#C0FF6B" stroke-width="3"/>
+    <line x1="20" y1="220" x2="580" y2="220" stroke="#6DB5CA" stroke-width="1.8" stroke-dasharray="4,4"/>
 
     <!-- Terminal Concourse Floor -->
-    <rect x="0" y="280" width="600" height="30" fill="#18181b" stroke="#27272a"/>
-    <line x1="0" y1="280" x2="600" y2="280" stroke="#6366f1" stroke-width="2"/>
+    <rect x="0" y="280" width="600" height="30" fill="#14171C" stroke="#808080" stroke-width="1" stroke-opacity="0.4"/>
+    <line x1="0" y1="280" x2="600" y2="280" stroke="#6DB5CA" stroke-width="1.8"/>
 
     <!-- Radar / Flight Tower Coordinate Vector Overlay -->
-    <circle cx="300" cy="180" r="90" fill="none" stroke="#06B6D4" stroke-opacity="0.25" stroke-width="1.5"/>
-    <circle cx="300" cy="180" r="140" fill="none" stroke="#8B5CF6" stroke-opacity="0.15" stroke-width="1"/>
-    <line x1="160" y1="180" x2="440" y2="180" stroke="#06B6D4" stroke-opacity="0.3"/>
-    <line x1="300" y1="40" x2="300" y2="320" stroke="#06B6D4" stroke-opacity="0.3"/>
+    <circle cx="300" cy="180" r="90" fill="none" stroke="#6DB5CA" stroke-opacity="0.25" stroke-width="1.2"/>
+    <circle cx="300" cy="180" r="140" fill="none" stroke="#C0FF6B" stroke-opacity="0.15" stroke-width="1"/>
+    <line x1="160" y1="180" x2="440" y2="180" stroke="#6DB5CA" stroke-opacity="0.3"/>
+    <line x1="300" y1="40" x2="300" y2="320" stroke="#6DB5CA" stroke-opacity="0.3"/>
   </g>
 
   <!-- HUD Specs -->
-  <g font-family="'Space Grotesk', monospace" font-size="12" fill="#A1A1AA">
-    <text x="40" y="50" fill="#8B5CF6" font-weight="bold" font-size="14">AVIATION &amp; ICONIC LANDMARKS // AURECON OFFSHORING</text>
+  <g font-family="'Space Grotesk', monospace" font-size="12" fill="#B4B9C2">
+    <text x="40" y="50" fill="#6DB5CA" font-weight="bold" font-size="14">AVIATION &amp; ICONIC LANDMARKS // AURECON OFFSHORING</text>
     <text x="40" y="70">PORTFOLIO: BRISBANE AIRPORT | MELBOURNE AIRPORT | MARINA BAY SANDS</text>
     <text x="40" y="90">DISCIPLINE: SLD SCHEMATICS &amp; HIGH-CAPACITY POWER CONTAINMENT</text>
     
-    <rect x="580" y="35" width="180" height="70" rx="6" fill="#18181b" stroke="#27272a"/>
-    <text x="595" y="60" fill="#FAFAFA" font-size="11">DELIVERY SCOPE</text>
-    <text x="595" y="80" fill="#8B5CF6" font-weight="bold" font-size="13">INTERNATIONAL</text>
+    <rect x="580" y="35" width="180" height="70" rx="6" fill="#14171C" stroke="#808080" stroke-opacity="0.4"/>
+    <text x="595" y="60" fill="#F5F7FA" font-size="11">DELIVERY SCOPE</text>
+    <text x="595" y="80" fill="#C0FF6B" font-weight="bold" font-size="13">INTERNATIONAL</text>
   </g>
 </svg>

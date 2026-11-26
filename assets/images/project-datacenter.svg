@@ -1,15 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
   <defs>
     <linearGradient id="dcBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0b12"/>
-      <stop offset="100%" stop-color="#12131f"/>
-    </linearGradient>
-    <linearGradient id="powerOrange" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#EF4444"/>
+      <stop offset="0%" stop-color="#0B0D0F"/>
+      <stop offset="100%" stop-color="#14171C"/>
     </linearGradient>
     <pattern id="dcGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#22232e" stroke-width="0.8"/>
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#808080" stroke-width="0.75" stroke-opacity="0.2"/>
     </pattern>
   </defs>
 
@@ -19,64 +15,64 @@
   <!-- Server Rack Hall Isometric Array -->
   <g transform="translate(100, 100)">
     <!-- Main Busway Overhead Trunk Line -->
-    <rect x="50" y="30" width="500" height="18" rx="3" fill="#8B5CF6" fill-opacity="0.2" stroke="#8B5CF6" stroke-width="2"/>
-    <line x1="50" y1="39" x2="550" y2="39" stroke="#38BDF8" stroke-width="2" stroke-dasharray="8,4"/>
+    <rect x="50" y="30" width="500" height="18" rx="3" fill="#6DB5CA" fill-opacity="0.15" stroke="#6DB5CA" stroke-width="2"/>
+    <line x1="50" y1="39" x2="550" y2="39" stroke="#C0FF6B" stroke-width="2" stroke-dasharray="8,4"/>
     
     <!-- Tap-off Boxes -->
-    <rect x="120" y="48" width="24" height="20" fill="#06B6D4" rx="2"/>
-    <rect x="240" y="48" width="24" height="20" fill="#06B6D4" rx="2"/>
-    <rect x="360" y="48" width="24" height="20" fill="#06B6D4" rx="2"/>
-    <rect x="480" y="48" width="24" height="20" fill="#06B6D4" rx="2"/>
+    <rect x="120" y="48" width="24" height="20" fill="#C0FF6B" rx="2"/>
+    <rect x="240" y="48" width="24" height="20" fill="#C0FF6B" rx="2"/>
+    <rect x="360" y="48" width="24" height="20" fill="#C0FF6B" rx="2"/>
+    <rect x="480" y="48" width="24" height="20" fill="#C0FF6B" rx="2"/>
 
     <!-- Drops to Server Racks -->
-    <line x1="132" y1="68" x2="132" y2="120" stroke="#06B6D4" stroke-width="2.5"/>
-    <line x1="252" y1="68" x2="252" y2="120" stroke="#06B6D4" stroke-width="2.5"/>
-    <line x1="372" y1="68" x2="372" y2="120" stroke="#06B6D4" stroke-width="2.5"/>
-    <line x1="492" y1="68" x2="492" y2="120" stroke="#06B6D4" stroke-width="2.5"/>
+    <line x1="132" y1="68" x2="132" y2="120" stroke="#C0FF6B" stroke-width="2"/>
+    <line x1="252" y1="68" x2="252" y2="120" stroke="#C0FF6B" stroke-width="2"/>
+    <line x1="372" y1="68" x2="372" y2="120" stroke="#C0FF6B" stroke-width="2"/>
+    <line x1="492" y1="68" x2="492" y2="120" stroke="#C0FF6B" stroke-width="2"/>
 
     <!-- Server Racks Row 1 -->
     <g transform="translate(80, 120)">
       <!-- Rack 1 -->
-      <rect x="0" y="0" width="85" height="150" rx="4" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
-      <line x1="10" y1="30" x2="75" y2="30" stroke="#8B5CF6" stroke-width="2"/>
-      <line x1="10" y1="60" x2="75" y2="60" stroke="#8B5CF6" stroke-width="2"/>
-      <line x1="10" y1="90" x2="75" y2="90" stroke="#8B5CF6" stroke-width="2"/>
-      <line x1="10" y1="120" x2="75" y2="120" stroke="#8B5CF6" stroke-width="2"/>
-      <circle cx="20" cy="15" r="3" fill="#10B981"/>
-      <circle cx="30" cy="15" r="3" fill="#3B82F6"/>
+      <rect x="0" y="0" width="85" height="150" rx="4" fill="#14171C" stroke="#808080" stroke-width="1.2" stroke-opacity="0.5"/>
+      <line x1="10" y1="30" x2="75" y2="30" stroke="#6DB5CA" stroke-width="1.8"/>
+      <line x1="10" y1="60" x2="75" y2="60" stroke="#6DB5CA" stroke-width="1.8"/>
+      <line x1="10" y1="90" x2="75" y2="90" stroke="#6DB5CA" stroke-width="1.8"/>
+      <line x1="10" y1="120" x2="75" y2="120" stroke="#6DB5CA" stroke-width="1.8"/>
+      <circle cx="20" cy="15" r="3" fill="#C0FF6B"/>
+      <circle cx="30" cy="15" r="3" fill="#6DB5CA"/>
 
       <!-- Rack 2 -->
-      <rect x="120" y="0" width="85" height="150" rx="4" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
-      <line x1="130" y1="30" x2="195" y2="30" stroke="#8B5CF6" stroke-width="2"/>
-      <line x1="130" y1="60" x2="195" y2="60" stroke="#8B5CF6" stroke-width="2"/>
-      <line x1="130" y1="90" x2="195" y2="90" stroke="#8B5CF6" stroke-width="2"/>
-      <circle cx="140" cy="15" r="3" fill="#10B981"/>
+      <rect x="120" y="0" width="85" height="150" rx="4" fill="#14171C" stroke="#808080" stroke-width="1.2" stroke-opacity="0.5"/>
+      <line x1="130" y1="30" x2="195" y2="30" stroke="#6DB5CA" stroke-width="1.8"/>
+      <line x1="130" y1="60" x2="195" y2="60" stroke="#6DB5CA" stroke-width="1.8"/>
+      <line x1="130" y1="90" x2="195" y2="90" stroke="#6DB5CA" stroke-width="1.8"/>
+      <circle cx="140" cy="15" r="3" fill="#C0FF6B"/>
 
       <!-- Rack 3 -->
-      <rect x="240" y="0" width="85" height="150" rx="4" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
-      <line x1="250" y1="30" x2="315" y2="30" stroke="#8B5CF6" stroke-width="2"/>
-      <line x1="250" y1="60" x2="315" y2="60" stroke="#8B5CF6" stroke-width="2"/>
-      <circle cx="260" cy="15" r="3" fill="#10B981"/>
+      <rect x="240" y="0" width="85" height="150" rx="4" fill="#14171C" stroke="#808080" stroke-width="1.2" stroke-opacity="0.5"/>
+      <line x1="250" y1="30" x2="315" y2="30" stroke="#6DB5CA" stroke-width="1.8"/>
+      <line x1="250" y1="60" x2="315" y2="60" stroke="#6DB5CA" stroke-width="1.8"/>
+      <circle cx="260" cy="15" r="3" fill="#C0FF6B"/>
 
       <!-- Rack 4 -->
-      <rect x="360" y="0" width="85" height="150" rx="4" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
-      <line x1="370" y1="30" x2="435" y2="30" stroke="#8B5CF6" stroke-width="2"/>
-      <circle cx="380" cy="15" r="3" fill="#10B981"/>
+      <rect x="360" y="0" width="85" height="150" rx="4" fill="#14171C" stroke="#808080" stroke-width="1.2" stroke-opacity="0.5"/>
+      <line x1="370" y1="30" x2="435" y2="30" stroke="#6DB5CA" stroke-width="1.8"/>
+      <circle cx="380" cy="15" r="3" fill="#C0FF6B"/>
     </g>
 
     <!-- Substation / MSB Supply Feeder Lines -->
-    <path d="M 0 250 L 50 250 L 50 40" fill="none" stroke="#F59E0B" stroke-width="3"/>
-    <text x="-15" y="275" fill="#F59E0B" font-family="'Space Grotesk', monospace" font-size="11">22kV SUBSTATION / MSB</text>
+    <path d="M 0 250 L 50 250 L 50 40" fill="none" stroke="#C0FF6B" stroke-width="2.5"/>
+    <text x="-15" y="275" fill="#C0FF6B" font-family="'Space Grotesk', monospace" font-size="11">22kV SUBSTATION / MSB</text>
   </g>
 
   <!-- HUD Specs -->
-  <g font-family="'Space Grotesk', monospace" font-size="12" fill="#A1A1AA">
-    <text x="40" y="50" fill="#06B6D4" font-weight="bold" font-size="14">HYPERSCALE DATA CENTERS // TIER III / IV</text>
+  <g font-family="'Space Grotesk', monospace" font-size="12" fill="#B4B9C2">
+    <text x="40" y="50" fill="#6DB5CA" font-weight="bold" font-size="14">HYPERSCALE DATA CENTERS // TIER III / IV</text>
     <text x="40" y="70">FACILITIES: MEL04, MEL05, MEL07, MEL11 &amp; NEXTDC A1</text>
     <text x="40" y="90">STAKEHOLDERS: MICROSOFT | JOHN HOLLAND | AURECON | NILSEN</text>
     
-    <rect x="580" y="35" width="180" height="70" rx="6" fill="#18181b" stroke="#27272a"/>
-    <text x="595" y="60" fill="#FAFAFA" font-size="11">POWER DENSITY</text>
-    <text x="595" y="80" fill="#06B6D4" font-weight="bold" font-size="13">HIGH TIER UPTIME</text>
+    <rect x="580" y="35" width="180" height="70" rx="6" fill="#14171C" stroke="#808080" stroke-opacity="0.4"/>
+    <text x="595" y="60" fill="#F5F7FA" font-size="11">POWER DENSITY</text>
+    <text x="595" y="80" fill="#C0FF6B" font-weight="bold" font-size="13">HIGH TIER UPTIME</text>
   </g>
 </svg>

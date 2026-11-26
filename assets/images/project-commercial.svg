@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
   <defs>
     <linearGradient id="commBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090a0f"/>
-      <stop offset="100%" stop-color="#141521"/>
+      <stop offset="0%" stop-color="#0B0D0F"/>
+      <stop offset="100%" stop-color="#14171C"/>
     </linearGradient>
   </defs>
 
@@ -11,43 +11,43 @@
   <!-- High-Rise Commercial Office Tower Wireframe -->
   <g transform="translate(180, 80)">
     <!-- Tower Main Massing -->
-    <rect x="120" y="30" width="200" height="320" fill="#18181b" stroke="#3f3f46" stroke-width="2"/>
+    <rect x="120" y="30" width="200" height="320" fill="#14171C" stroke="#808080" stroke-width="1.5" stroke-opacity="0.5"/>
     
     <!-- Floor Levels Grid -->
-    <line x1="120" y1="70" x2="320" y2="70" stroke="#27272a" stroke-width="1.2"/>
-    <line x1="120" y1="110" x2="320" y2="110" stroke="#27272a" stroke-width="1.2"/>
-    <line x1="120" y1="150" x2="320" y2="150" stroke="#27272a" stroke-width="1.2"/>
-    <line x1="120" y1="190" x2="320" y2="190" stroke="#27272a" stroke-width="1.2"/>
-    <line x1="120" y1="230" x2="320" y2="230" stroke="#27272a" stroke-width="1.2"/>
-    <line x1="120" y1="270" x2="320" y2="270" stroke="#27272a" stroke-width="1.2"/>
-    <line x1="120" y1="310" x2="320" y2="310" stroke="#27272a" stroke-width="1.2"/>
+    <line x1="120" y1="70" x2="320" y2="70" stroke="#808080" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="120" y1="110" x2="320" y2="110" stroke="#808080" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="120" y1="150" x2="320" y2="150" stroke="#808080" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="120" y1="190" x2="320" y2="190" stroke="#808080" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="120" y1="230" x2="320" y2="230" stroke="#808080" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="120" y1="270" x2="320" y2="270" stroke="#808080" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="120" y1="310" x2="320" y2="310" stroke="#808080" stroke-width="1" stroke-opacity="0.3"/>
 
     <!-- Electrical Core Riser Shaft (Vertical Busduct & DBs) -->
-    <rect x="205" y="30" width="30" height="320" fill="#8B5CF6" fill-opacity="0.15" stroke="#8B5CF6" stroke-width="1.5"/>
-    <line x1="220" y1="30" x2="220" y2="350" stroke="#06B6D4" stroke-width="3" stroke-dasharray="6,4"/>
+    <rect x="205" y="30" width="30" height="320" fill="#6DB5CA" fill-opacity="0.12" stroke="#6DB5CA" stroke-width="1.2"/>
+    <line x1="220" y1="30" x2="220" y2="350" stroke="#C0FF6B" stroke-width="2.5" stroke-dasharray="6,4"/>
 
     <!-- Floor Distribution Boards (DBs) -->
-    <circle cx="220" cy="70" r="4" fill="#38BDF8"/>
-    <circle cx="220" cy="110" r="4" fill="#38BDF8"/>
-    <circle cx="220" cy="150" r="4" fill="#38BDF8"/>
-    <circle cx="220" cy="190" r="4" fill="#38BDF8"/>
-    <circle cx="220" cy="230" r="4" fill="#38BDF8"/>
-    <circle cx="220" cy="270" r="4" fill="#38BDF8"/>
-    <circle cx="220" cy="310" r="4" fill="#38BDF8"/>
+    <circle cx="220" cy="70" r="3.5" fill="#C0FF6B"/>
+    <circle cx="220" cy="110" r="3.5" fill="#C0FF6B"/>
+    <circle cx="220" cy="150" r="3.5" fill="#C0FF6B"/>
+    <circle cx="220" cy="190" r="3.5" fill="#C0FF6B"/>
+    <circle cx="220" cy="230" r="3.5" fill="#C0FF6B"/>
+    <circle cx="220" cy="270" r="3.5" fill="#C0FF6B"/>
+    <circle cx="220" cy="310" r="3.5" fill="#C0FF6B"/>
 
     <!-- Main Switchboard (MSB) in Basement -->
-    <rect x="150" y="325" width="140" height="25" fill="#1e1e2d" stroke="#F59E0B" stroke-width="1.5"/>
-    <text x="165" y="342" fill="#F59E0B" font-family="'Space Grotesk', monospace" font-size="10">MAIN SWITCHBOARD</text>
+    <rect x="150" y="325" width="140" height="25" fill="#1B1F26" stroke="#6DB5CA" stroke-width="1.2"/>
+    <text x="165" y="342" fill="#6DB5CA" font-family="'Space Grotesk', monospace" font-size="10">MAIN SWITCHBOARD</text>
   </g>
 
   <!-- HUD Specs -->
-  <g font-family="'Space Grotesk', monospace" font-size="12" fill="#A1A1AA">
-    <text x="40" y="50" fill="#06B6D4" font-weight="bold" font-size="14">COMMERCIAL HIGH-RISE // NDY CLIENT PORTFOLIO</text>
+  <g font-family="'Space Grotesk', monospace" font-size="12" fill="#B4B9C2">
+    <text x="40" y="50" fill="#C0FF6B" font-weight="bold" font-size="14">COMMERCIAL HIGH-RISE // NDY CLIENT PORTFOLIO</text>
     <text x="40" y="70">FIRM: INDOCHINE ENGINEERING (OFFSHORING FOR NDY AU &amp; UK)</text>
     <text x="40" y="90">DISCIPLINE: 3-PHASE LOAD BALANCING, SLD, SCHEMATIC DESIGN</text>
     
-    <rect x="580" y="35" width="180" height="70" rx="6" fill="#18181b" stroke="#27272a"/>
-    <text x="595" y="60" fill="#FAFAFA" font-size="11">ELECTRICAL BALANCE</text>
-    <text x="595" y="80" fill="#06B6D4" font-weight="bold" font-size="13">3-PHASE LOAD SLD</text>
+    <rect x="580" y="35" width="180" height="70" rx="6" fill="#14171C" stroke="#808080" stroke-opacity="0.4"/>
+    <text x="595" y="60" fill="#F5F7FA" font-size="11">ELECTRICAL BALANCE</text>
+    <text x="595" y="80" fill="#C0FF6B" font-weight="bold" font-size="13">3-PHASE LOAD SLD</text>
   </g>
 </svg>

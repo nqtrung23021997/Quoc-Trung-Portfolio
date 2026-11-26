@@ -1,6 +1,7 @@
 /**
  * Interactive Electrical Circuit / BIM Coordinate Lattice Canvas
  * High performance, 60fps, subtle, respects prefers-reduced-motion
+ * Palette: Grey (#808080) + Electric Lime (#C0FF6B) + Architectural Cyan (#6DB5CA)
  */
 
 (function () {
@@ -15,9 +16,9 @@
 
   // Particle network parameters
   const particles = [];
-  const particleCount = Math.min(Math.floor((width * height) / 18000), 55);
-  const connectionDistance = 140;
-  const mouse = { x: null, y: null, radius: 160 };
+  const particleCount = Math.min(Math.floor((width * height) / 19000), 50);
+  const connectionDistance = 135;
+  const mouse = { x: null, y: null, radius: 150 };
 
   window.addEventListener('resize', () => {
     if (!canvas || !canvas.parentElement) return;
@@ -37,19 +38,33 @@
     mouse.y = null;
   });
 
+  // Safe touch listeners (passive, never blocks scroll)
+  window.addEventListener('touchmove', (e) => {
+    if (e.touches.length > 0) {
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = e.touches[0].clientX - rect.left;
+      mouse.y = e.touches[0].clientY - rect.top;
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchend', () => {
+    mouse.x = null;
+    mouse.y = null;
+  }, { passive: true });
+
   class Particle {
     constructor() {
       this.x = Math.random() * width;
       this.y = Math.random() * height;
-      this.vx = (Math.random() - 0.5) * 0.45;
-      this.vy = (Math.random() - 0.5) * 0.45;
-      this.radius = Math.random() * 1.6 + 1.0;
-      this.isNode = Math.random() > 0.65; // special BIM node
+      this.vx = (Math.random() - 0.5) * 0.42;
+      this.vy = (Math.random() - 0.5) * 0.42;
+      this.radius = Math.random() * 1.5 + 1.0;
+      this.isNode = Math.random() > 0.68; // special BIM node
       this.pulse = Math.random() * Math.PI;
     }
 
     update() {
-      this.pulse += 0.03;
+      this.pulse += 0.025;
       this.x += this.vx;
       this.y += this.vy;
 
@@ -64,24 +79,24 @@
         if (dist < mouse.radius) {
           const force = (mouse.radius - dist) / mouse.radius;
           const angle = Math.atan2(dy, dx);
-          this.x -= Math.cos(angle) * force * 1.5;
-          this.y -= Math.sin(angle) * force * 1.5;
+          this.x -= Math.cos(angle) * force * 1.3;
+          this.y -= Math.sin(angle) * force * 1.3;
         }
       }
     }
 
     draw() {
       ctx.beginPath();
-      const currentRadius = this.isNode ? this.radius + Math.sin(this.pulse) * 0.5 : this.radius;
+      const currentRadius = this.isNode ? this.radius + Math.sin(this.pulse) * 0.45 : this.radius;
       ctx.arc(this.x, this.y, Math.max(0.8, currentRadius), 0, Math.PI * 2);
-      ctx.fillStyle = this.isNode ? 'rgba(139, 92, 246, 0.75)' : 'rgba(6, 182, 212, 0.6)';
+      ctx.fillStyle = this.isNode ? 'rgba(192, 255, 107, 0.85)' : 'rgba(109, 181, 202, 0.65)';
       ctx.fill();
 
       // Glow ring on special BIM nodes
       if (this.isNode) {
         ctx.beginPath();
-        ctx.arc(this.x, this.y, currentRadius * 2.5, 0, Math.PI * 2);
-        ctx.strokeStyle = 'rgba(139, 92, 246, 0.15)';
+        ctx.arc(this.x, this.y, currentRadius * 2.6, 0, Math.PI * 2);
+        ctx.strokeStyle = 'rgba(192, 255, 107, 0.18)';
         ctx.lineWidth = 1;
         ctx.stroke();
       }
@@ -103,12 +118,12 @@
         const dist = Math.hypot(dx, dy);
 
         if (dist < connectionDistance) {
-          const alpha = (1 - dist / connectionDistance) * 0.22;
+          const alpha = (1 - dist / connectionDistance) * 0.18;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(139, 92, 246, ${alpha})`;
-          ctx.lineWidth = 0.8;
+          ctx.strokeStyle = `rgba(109, 181, 202, ${alpha})`;
+          ctx.lineWidth = 0.75;
           ctx.stroke();
         }
       }
@@ -119,11 +134,11 @@
         const dy = particles[i].y - mouse.y;
         const dist = Math.hypot(dx, dy);
         if (dist < mouse.radius) {
-          const alpha = (1 - dist / mouse.radius) * 0.45;
+          const alpha = (1 - dist / mouse.radius) * 0.38;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(mouse.x, mouse.y);
-          ctx.strokeStyle = `rgba(6, 182, 212, ${alpha})`;
+          ctx.strokeStyle = `rgba(192, 255, 107, ${alpha})`;
           ctx.lineWidth = 1;
           ctx.stroke();
         }
